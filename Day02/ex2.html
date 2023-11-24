@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>과제2</h1>
+
+    <form>  <!-- 폼( 입력 양식 ) -->
+        <fieldset>  <!-- 필드 구역 시작 -->
+            <legend>비회원 게시판</legend>  <!-- 필드 구역에 제목 <legend> 제목 </legend> --> 
+
+            <label>카테고리</label>
+            <select name="카테고리">
+                <option>공지사항</option>
+                <option>일반게시글</option>
+            </select>
+            <br/>
+
+            <input type="text" placeholder="작성자" />
+            <input type="password" placeholder="비밀번호" />
+            <br/>
+            <hr/>  <!-- 해당 줄 에 밑줄을 그어준다. -->
+
+            <input type="text" placeholder="게시물 제목 입력" />
+            <hr/>
+            <textarea cols="30" rows="10" placeholder="게시물 내용입력"></textarea>
+            <br/>
+
+            <label>공개선택</label>
+            <input type="radio" name="openConfirm" checked /> 공개글
+            <input type="radio" name="openConfirm"/> 비공개글
+            <br/>
+
+            <label>비공개글</label>
+            <input type="checkbox" name="shareConfirm"/> 카카오톡
+            <input type="checkbox" name="shareConfirm"/> 트위터
+            <input type="checkbox" name="shareConfirm"/> 네이버카페
+            <br/>
+
+            <label>작성일자</label>
+            <input type="date" />
+            <label>작성시간</label>
+            <input type="time" />
+            <br/>
+            <hr/>
+
+            <label>첨부파일</label>
+            <input type="file" />
+            <br/> <br/>
+            <input type="button" value="목록보기" />
+            <input type="submit" value="글쓰기" />
+            <input type="reset" value="다시쓰기" />
+        </fieldset>     <!-- 필드 구역 END -->
+    </form>             <!-- 폼( 입력 양식 ) END -->
+
+</body>
+</html>
