@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='ex3.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+        <h1><img src="구글로고.png" alt="구글로고"/></h1>
+        <h5 id="제출자">김동훈 , 박효성 , 박시현</h5>
+    <div class="box1">
+    <form>
+        <fieldset>
+            <legend>검색엔진 만족도 조사</legend>
+            이름 : <input type="text"/> 
+            국가 : <select> 
+                <option>대한민국</option>
+                <option>미국</option>
+                <option>일본</option>
+            </select> 
+            <hr/>
+            <ol>
+                <li>
+                    구글 검색을 자주 사용하시나요?<br/>
+                    <input type="radio" name="select"/>매우그렇다
+                    <input type="radio" name="select"/>그렇다
+                    <input type="radio" name="select"/>보통이다
+                    <input type="radio" name="select"/>아니다
+                    <input type="radio" name="select"/>매우아니다
+                </li>
+                <hr/>
+                <li>
+                    검색 결과는 만족스러우신가요?<br/>
+                    <input type="radio" name="select1"/>매우그렇다
+                    <input type="radio" name="select1"/>그렇다
+                    <input type="radio" name="select1"/>보통이다
+                    <input type="radio" name="select1"/>아니다
+                    <input type="radio" name="select1"/>매우아니다
+                </li>
+                <hr/>
+                <li>
+                    다른 검색엔진과 같이 사용해보신 적이 있으신가요 [EX. 네이버, 다음]<br/>
+                    <input type="radio" name="select2"/>매우그렇다
+                    <input type="radio" name="select2"/>그렇다
+                    <input type="radio" name="select2"/>보통이다
+                    <input type="radio" name="select2"/>아니다
+                    <input type="radio" name="select2"/>매우아니다
+                </li>
+                <hr/>
+                <li>
+                    검색엔진의 UI는 만족스러우신가요?<br/>
+                    <input type="radio" name="select3"/>매우그렇다
+                    <input type="radio" name="select3"/>그렇다
+                    <input type="radio" name="select3"/>보통이다
+                    <input type="radio" name="select3"/>아니다
+                    <input type="radio" name="select3"/>매우아니다
+                </li>
+                <hr/>
+                <li>
+                    GOOGLE 검색엔진의 만족도는 어느정도 인가요?<br/>
+                    <input type="radio" name="select4"/>매우만족
+                    <input type="radio" name="select4"/>만족
+                    <input type="radio" name="select4"/>보통
+                    <input type="radio" name="select4"/>불만족
+                    <input type="radio" name="select4"/>매우불만족
+                </li>
+            </ol>
+    </fieldset>
+</div>
+<div class="box1">
+    <fieldset>
+            <legend><h3>건의사항</h3></legend>
+            <textarea rows="10" cols="110" placeholder="불편한 사항이나 기타 건의사항을 입력해주세요."></textarea>
+    </fieldset>
+        <br/>
+        <input type="date"> 
+        <input type="time">
+    
+        <input type="submit" class="test"/>
+        <input type="reset" />
+    
+    </form>
+</div>
+</body>
+</html>
