@@ -1,7 +1,7 @@
 /* 전체 몸통 가로 세로 크기 조절 및 가운데 정렬 */
 .wrap{ width: 800px; height: 800px; margin: 0 auto;}
 /* 맨 아래 input submit 과 reset 버튼 오른쪽 이동 */
-.subMargin{ margin-left: 450px;}
+.subMargin{ margin-left: 420px;}
 /* 로고 이미지 가운데 정렬 */
 h1{ text-align: center;}
 /* 로고 박스 부분 백그라운드 */
