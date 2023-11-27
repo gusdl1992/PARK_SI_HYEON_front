@@ -1,4 +1,12 @@
 
+HTML : 하이퍼텍스트 마크업 언어 (HyperText Markup Language)
+    
+    HTTP : HTML 통신 규약 (하이퍼 텍스트 전송 프로토콜)
+        - HTML을 전송할때 사용되는 규약
+            http://www.naver.com [ 네이버 메인 페이지 줘 ]
+            실생활 규약 ( 집 주소 )
+            경기도 안산시 상록구
+
 
 마크업 이란
     - 컴퓨터가 기능을 이해할수있는 HTML의 문법

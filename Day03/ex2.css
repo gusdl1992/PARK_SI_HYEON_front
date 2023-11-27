@@ -1,0 +1,70 @@
+/* 선택자 활용 */
+.h4_left_border{
+    word-spacing: 4px;
+    padding-left: 10px;
+    border-left: solid 10px green;
+}
+
+.content{
+    width: 400px;
+    background-color: #e8e8e8;
+    border: solid 2px gray;
+    border-radius: 10px;
+    padding: 40px;
+}
+.contli{
+    margin-bottom: 15px; /* 바깥 아래쪽 여백 */;
+}
+
+div{
+    width: 280px;
+    border: solid 2px gray;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0px 30px 40px;
+}
+p{
+    border-bottom: dotted 1px gray;
+    padding-bottom: 20px;
+}
+.h4_right{
+    text-align: right;
+}
+
+/* 강사님 코드 시작 */
+
+.title{   /* h4 2개 클래스 이름 주고 변경 */
+    border-left: 10px solid green; /* 왼쪽 테두리 */
+    padding-left: 10px; /* 왼쪽 안쪽 여백 */
+}
+.content{
+    width: 400px;   /* 가로 사이즈 */
+    background-color: #e8e8e8; /* 배경색 */
+    border: solid 2px gray; /* 테두리 */
+    border-radius: 10px; /* 둥근 모서리 */
+    padding: 40px;
+}
+
+.contli{
+    margin-bottom: 15px; /* 바깥 아래쪽 여백 */;
+}
+
+/* 
+.info{
+    width: 300px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 40px;
+} 
+*/
+
+.contp{
+    border-bottom: dotted 1px gray;
+    padding-bottom: 20px;
+    line-height: 160%; /* 줄 간격 */
+}
+
+.conth4{
+    text-align: right;
+}
