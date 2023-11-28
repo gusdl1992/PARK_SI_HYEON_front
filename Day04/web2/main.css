@@ -1,0 +1,104 @@
+/* 
+    1280px
+    a [블랙], ul li 
+    폰트 기본
+    콘텐츠는 만드는사람이 3분할 
+
+    header . main_logo , menus , top_menu , bottom_menu
+
+    main , main_img   왼쪽 aside 중앙 content 오른쪽 article
+
+    footer , ft_box
+*/
+li{list-style-type: none;}
+a{text-decoration-line: none; color: black;}
+ul{ padding: 0px; margin: 0px;} /* 기본 ul 패딩 마진 값을 제거*/
+
+
+
+
+
+#main_img{
+    width: 100%;
+    height: 250px;
+    background-image: url(img/main_bg.png); /* 배경에 이미지 삽입 ※ 사이즈 필수 */
+    background-repeat: no-repeat;    /* 자리가 남으면 채우기 repeat[기본값] */
+    background-position: center;    /* 배경을 가운데로 */
+    margin-bottom: 10px;
+}
+
+#main{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;  /* 하위 요소들 가로 배치*/
+    flex-wrap: nowrap;
+    justify-content: space-between;     
+}
+
+#aside{
+    width: 230px;
+
+}
+
+#aside h2{
+    color: white;
+    background-color: #0CA9A3;
+    padding: 10px;
+}
+#aside p{
+    padding: 0px 6px 0px 6px;
+}
+
+
+#aside h3{
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#aside ul li{
+    padding: 8px;
+}
+
+#content{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content h3{
+    border-bottom: 1px solid black;
+    width: 500px;
+    box-sizing: border-box;
+    height: 50px;
+}
+#content ul{
+    width: 500px;
+}
+
+#content ul li{    
+    padding: 5px;
+    font-size: 14px;
+}
+.cont_right{
+    padding-left: 280px;
+}
+
+#article{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#article div{
+    width: 240px;
+}
+#article h3{
+    border-bottom: 1px solid black;
+    width: 500px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    height: 50px;
+}

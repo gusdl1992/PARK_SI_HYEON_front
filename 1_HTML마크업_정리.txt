@@ -139,7 +139,18 @@ HTML : 하이퍼텍스트 마크업 언어 (HyperText Markup Language)
     - 필드 제목
         <legend> 제목 입력 </legend>
 
-12. <div></div>
+12. <div>
+
+    <span>
+
+13. 레이아웃용 시맨틱 태그
+    1. <header>     : 해더                                      <div id="header">
+    2. <nav>        : 메뉴                                      <div id="nav">                                 
+    3. <main>       : 본문                                      <div id="main">
+    4. <article>    : 기사문                vs                  <div id="article">       
+    5. <aside>      : 사이드바                                  <div id="aside">
+    6. <footer>     : 푸터                                      <div id="footer">
+    7. <section>    : 내용구역1                                 <div id="section">
 
 
         

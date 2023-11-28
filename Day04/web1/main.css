@@ -1,0 +1,98 @@
+/* 글머리 제거 */
+li{list-style-type: none;}
+/* a태그 밑줄 제거 */
+a{text-decoration-line: none; color: black;}
+/* 
+    1. 선택자를 여러개 선택할떄는 , (쉼표) 구분
+    2. 하위선택자를 선택할떄는 상위선택자 하위선택자 (뛰어쓰기) 구분
+*/
+
+#header{
+    width: 1280px;                      /* 표준 PC 모니터 사이즈 */
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+    #main_logo img{      /* main_logo id 하위에 img 마크업 선택 */
+        margin-top: 5px;
+    }
+
+    #top_menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #top_menu span{margin: 0 10px;}         /* ' top_menu ' id 하위에 span 선택 */
+
+    #main_menu{ /* 헤더의 오른쪽 메인메뉴 */
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        width: 700px;
+    }
+
+#main{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;  /* 하위 요소들 가로 배치*/
+    flex-wrap: nowrap;      /* 기본값 생략 가능 */
+    justify-content: space-between; /* 양끝 여백 만들기 */
+}
+
+    #aside{width: 230px;} /* 사이드 바 */
+    #aside h3{
+        font-size: 20px;
+        background-color: cadetblue;
+        color: white;
+        padding: 12px;
+    }
+
+    ul{ padding: 0px; margin: 0px;} /* 기본 ul 패딩 마진 값을 제거*/
+
+    #aside ul li{    
+        padding: 10px;
+        border-bottom: solid 1px #e8e8e8;
+    }
+
+    #article{width: 1000px;}
+
+    #article h3{
+        border-bottom: 1px solid #e8e8e8;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+    #article img{display: block; margin: 0 auto; }
+
+#footer{
+    background-color: #2C2A29;
+    margin-top: 20px;
+}
+
+#ft_box{
+    width: 1280px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    align-items: center;
+}
+
+
+#ft_box div ul{
+    color: white;
+}
+
+/* 이미지 가운데 정렬 방법 */
+/* #main_img{
+    display: block;
+    margin: 0 auto;
+} */
+
+#main_img{
+    width: 100%;
+    height: 250px;
+    background-image: url(img/main_img.png); /* 배경에 이미지 삽입 ※ 사이즈 필수 */
+    background-repeat: no-repeat;    /* 자리가 남으면 채우기 repeat[기본값] */
+    background-position: center;    /* 배경을 가운데로 */
+}
