@@ -3,7 +3,7 @@ a{
     color: black;
 }
 
-
+/* 헤더 시작 */
 #header_3{
     width: 1280px;
     margin: 0 auto;
@@ -33,6 +33,8 @@ a{
 .headerNavRight{
     margin-right: 100px;
 }
+
+/* 헤더 끝 */
 /* 중앙 content 크기 및 센터 이동 */
 #content_3{
     width: 1280px;
@@ -140,6 +142,7 @@ a{
 }
 /* 오른쪽 컨텐츠 박스 끝 */
 
+/* footer 시작 */
 #footer_3{
     background-color: #292C32;
     display: flex;
