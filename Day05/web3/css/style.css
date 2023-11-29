@@ -1,0 +1,150 @@
+body{
+    /* 94p. 백그라운드 이미지 */
+    background-image: url(../images/bg.png);
+    /* 95p. 글자 관련 속성 */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+/*  ========================  헤더  ==========================  */
+
+
+header{
+    /* 95p . 헤더영역 가운데 정렬 */
+    width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+}
+h1{
+    /* 96p. 로고 가운데 정렬 */
+    text-align: center;
+    padding: 20px 0px 16px;
+}
+
+header nav ul{
+    /* 96~97. !!!!! : 네이게이션 가로로 정렬 */
+    /* 상위선택자를 통해 하위선택자를 호출하는 방법 : 뛰어쓰기로 구분 */
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #7c5d48;
+    border-bottom: 2px solid #7c5d48;
+    background-color: rgba(255, 255, 255, 0.42);
+    /* rgba ( 레드 ,그린 , 블루 투명도( 1:100% ) ) */
+    padding: 12px 0px 10px;
+}
+header nav ul li{ margin: 0px 20px; }
+header nav ul li a{
+    font-size: 22px;
+    font-weight: bold;
+    color: #7c5d48;
+}
+/* p.99 마우스 커서를 올렸을때 효과 hover */
+header nav ul li a:hover{
+    text-decoration: underline double; /* 텍스트의 선  */
+}
+
+/*  ========================  본문  ==========================  */
+/* p101 main 태그와 aside태그를 가로배치 */
+div{
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;  /* !!!!!  */
+    justify-content: space-between; /* !!!!!  */
+}
+
+/* p.102 왼쪽 : main 태그   /   오른쪽 : aside 태그  */
+main{ 
+    width: 920px;
+    background-color: #ffffff;
+    border-radius: 16px;    /* 둥근 모서리 */
+    padding: 62px 72px 32px 72px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+}
+
+aside{ 
+    width: 284px;
+}
+aside nav{
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0,0.16);
+    padding: 24px 28px; /* 안쪽 여백 */
+    margin-bottom: 24px;    /* 바깥 여백 */
+}
+
+aside nav h2{   /* p.104 */
+    margin-bottom: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #7c5d48;
+}
+
+aside nav ul{   /* p.105 */
+    font-size: 14px;
+}
+.categoryNav ul li{ /* p.107 : 글머리 (목록의 마커 스타일 ) */
+    list-style-type: square;
+    color: #7c5d48;
+    margin: 0 0 16px 20px;
+}
+.categoryNav ul li a{
+    color: #333333;
+}
+.recentNav ul li{
+    border-bottom: 1px solid #7c5d48;
+    padding-bottom: 10px;
+    margin-bottom: 22px;
+}
+.recentNav ul{  /* p.109 내용이 사이즈 보다 넘쳤을떄 스크롤 사용하기*/
+    height: 240px;
+    overflow: hidden scroll;
+}
+
+article h2{ /* p.110 */
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+time{
+    background-color: #91c777;
+    border-radius: 0px 22px 22px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 11px 23px 10px 18px;
+    display: inline-block;
+}
+
+.postdate{   /* p.112 */
+    margin-bottom: 26px;
+}
+.eyecatch{   /* p.113 */
+    margin-bottom: 26px;
+}
+article h3{
+    border-bottom: 2px solid #6ab547;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    /* p.114 */
+    background-image: url(../images/h2_icon.png);   /* 배경 이미지 */
+    /* 배경 이미지 여백 채우기 부분 no-repeat : 채우기 안함*/
+    background-repeat: no-repeat;                   
+    background-position: left bottom;               /* 왼쪽 아래 */
+    padding: 20px 10px 10px 48px;                   /* 여백 넣어 이미지와 위치 조절 */
+}
+
+article section p{
+    line-height: 1.6;                               /* 줄 간격 */
+    margin-bottom: 24px;
+}
+
+article section{
+    margin-bottom: 50px;
+}
+footer{
+    background-color: #523f2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 10px 20px;
+}
