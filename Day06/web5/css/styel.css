@@ -1,0 +1,153 @@
+/* 기본 여백 제거 1. 직접제거 2. css/cdn */
+*{
+    padding: 0; margin: 0;
+}
+a{color: black; text-decoration-line: none; text-decoration: none;}
+
+body{
+    background-color: #f5f6f7;
+}
+
+#wrap{ width: 400px; margin: 0 auto; }
+/* =================== 헤더 =========================== */
+#headerLogo{ text-align: center; margin: 50px 0; }
+#headerLogo img{height: 50px;}
+
+/* ====================== 본문 =========================== */
+
+#main{
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* 1. ----------- 입력상자 만들기 --------------- */
+.inputBox{
+    background-color: white;
+    border: 1px solid #dedede;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;  /* 기본값 안넣어도 된다. */
+    align-items: center;    /* 세로 정렬 */
+}
+.inputBox input , select{
+    border: none; /* 테두리 제거 */
+    background-color: white;
+    height: 30px;
+    width: 100%;
+}
+
+.inputBox span{
+    color: #aeaeae;
+}
+
+*:focus{ outline: none; }   /* 포크스 : 커서 깜빡 거림 상태.. */
+
+/* -----------------------------------------  */
+h5{ margin: 20px 0px 5px 0px; }
+
+/* --------------- 2. 배경을 이용한 아이콘 삽입하기 ------------------ */
+
+.inpuIcon{
+    width: 25px;
+    height: 25px;
+    background-image: url(https://static.nid.naver.com/images/ui/join/m_icon_pw_step.png);
+    background-size: 120px 75px; /* 가로 , 세로 사이즈 */
+}
+
+#pwIcon{
+    background-position-x: 0px; /* x 축의 위치 */
+    background-position-y: 0px; /* y 축의 위치 */
+}
+
+#pwConfirmIcon{
+    background-position-x: -25px; /* x 축의 위치 */
+    background-position-y: -28px; /* y 축의 위치 */
+
+}
+
+#birthBox{  /* 생년월일 */
+    display: flex;
+    justify-content: space-between;
+}
+/* 년 월 일 */
+.birtY , .birtM , .birtD{
+    width: 100px;
+}
+
+.titleAt{
+    font-size: 10px;
+    color: #aeaeae;
+}
+/* 휴대전화 구역 */
+#phoneBox{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+#phoneBox > input{
+    background-color: #03C75A;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 100px;
+}
+
+#phoneBox > div{
+    width: 250px;
+}
+/* 
+    #phoneBox input : 자손
+    #phoneBox > input : 자식
+
+*/
+
+#inputAuth , #inputAuth > input{
+    background-color: #f5f6f7;
+}
+
+/* 가입하기 버튼 */
+#signupBtn{
+    background-color: #03C75A;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 50px 0px;
+}
+
+/* 푸터 */
+
+#footerBox{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+#ftTop{
+    font-size: 10px;
+    color: #aeaeae;
+}
+#ftTop > a{
+    margin: 0px 2px 0px 5px;
+    color: #6e6e6e;
+    font-weight: bold;
+}
+
+#ftBottom{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ftBottom img{
+    height: 13px;
+    
+}
+#ftBottom span{
+    font-size: 6px;
+    margin-left: 10px;
+
+}
