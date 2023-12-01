@@ -1,5 +1,6 @@
 a{text-decoration: none; color: black;}
 /* 전체 랩 100% 백그라운드 컬러를 위하여 할당 */
+*{box-sizing: border-box;}
 #s1Rwap{
     width: 100%;
 }
@@ -47,7 +48,7 @@ a{text-decoration: none; color: black;}
 }
 /* 헤더 검색 인풋 설정 */
 #s1_headerSuch > input{
-    height: 20px; width: 280px;
+    height: 40px; width: 280px;
     border: none;
     background-color: #f2f3f6;
     border-radius: 5px;
@@ -100,7 +101,6 @@ a{text-decoration: none; color: black;}
     position: absolute;
     left: 100px;
     top: 50px;
-    
 }
 /* 중앙 배너 텍스트 설정 P */
 #s1_contetRwapBaner p{
@@ -327,3 +327,183 @@ a{text-decoration: none; color: black;}
 .unDerLine:hover{
     text-decoration: underline;
 }
+
+
+/* =======================sub2 페이지 시작============================ */
+
+/* 중앙 사진부분 백그라운드 크기 100% 할당 및 컬러 설정 */
+#s1_content_Back_2{
+    width: 100%;
+    height: 300px;
+    background-color: #F7F1EB;
+}
+/* 베너 텍스트 사진 센터정렬 박스 */
+#s1_content_2{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+/* 중앙 배너 텍스트 설정 H3 */
+#s1_contetRwapBaner_2 h3{
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.5;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    
+}
+/* 중앙 배너 텍스트 설정 P */
+#s1_contetRwapBaner_2 p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.2;
+    position: absolute;
+    left: 100px;
+    top: 180px;
+}
+/* 중앙 배너 이미지 설정 */
+#s1_contetRwapBaner_2 > img{
+    height: 250px;
+    position: absolute;
+    left: 450px;
+    top: 50px;
+}
+/* 중앙 상단 식당 버튼 부분 */
+#s1_conNav{width: 800px;margin: 0 auto;}
+/* 중앙 상단 식당 버튼 부분 센터정렬 */
+#s1_conNav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* 중앙 상단 식당 버튼 부분 폰트 밑 사이즈 조절 */
+#s1_conNav ul > li{
+    font-size: 15px;
+    padding: 12px; 
+    border: 1px solid #EDEEF1; 
+    border-radius: 20px;
+}
+
+.s1Li_color{
+    background-color: #4D5159;
+}
+#s1_conNav span{
+    border: 4px solid transparent;
+    background: linear-gradient(#4D5159, #4D5159) padding-box, linear-gradient(to left bottom, #4D5159, #4D5159) border-box;
+    padding: 1px;
+}
+/* 중앙 홍보 부분 시작 */
+#s1_contentMain2{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.s1_contentMain2Size{
+    width: 380px;
+    display: flex;
+    align-items: center;
+    padding: 35px 0px;
+    border-bottom: 1px solid #EAEBEE;
+}
+.s1Nonunder{
+    border: none;
+}
+
+#s1_contentMain2 img{
+    height: 100px;
+    border-radius: 50px;
+}
+
+.s1_contentMain2_text{
+    padding-left: 20px;
+    line-height: 1.4;
+    font-size: 15px;
+}
+.s1_contentMain2_text h5{
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.s1_contentMain2_text_gray{ color: #868B94; font-size: 14px;}
+
+#s1_contentRwap h2{
+    width: 800px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 50px 0px 35px 0px;
+}
+/* 중앙 하단 홍보 부분 시작 */
+#s1_contentMainBottom{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#s1_contentMainBottom > div{
+    width: 380px;
+    position: relative;
+    border: 1px solid #EAEBEE;
+    border-radius: 10px;
+    margin: 10px 15px 10px 0px;
+}
+#s1_contentMainBottom > div > a > p{
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    line-height: 1.3;
+}
+/* 중앙 맨 하단 베너 시작 */
+#s1_contentMainBtBener{
+    width: 800px;
+    height: 130px;
+    margin: 50px auto;
+    background-color: #FEF6EA;
+    display: flex;
+    align-items: center;
+}
+#s1_contentMainBtBener > div > img{
+    padding-left: 30px;
+}
+#s1_contentMainBtBener > div > h5{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 100px 10px 30px;
+}
+.s1_contentMainBtBenerText{
+    font-size: 16px;
+    padding: 0px 100px 10px 30px;
+}
+
+.bizpropil{
+    width: 180px;
+    height: 40px;
+    border: 1px solid red;
+    background-color: #FF6F0F;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+}
+.bizpropil > a > p{
+    font-size: 16px;
+    color: white;
+}
+.s1_contentMain2Size:hover{
+    opacity: 0.7;
+}
+
+#s1_contentMainBottom > div:hover{
+    opacity: 0.7;
+}
+
+/* 중앙 배너 끝 */
+
+
+
