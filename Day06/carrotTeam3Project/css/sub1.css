@@ -1,0 +1,214 @@
+a{text-decoration: none; color: black;}
+/* 전체 랩 100% 백그라운드 컬러를 위하여 할당 */
+#s1Rwap{
+    width: 100%;
+}
+/* 헤더 시작 */
+#s1_header{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between;
+}
+/* 로고 패딩 */
+#s1_headerLogo{
+    padding-right: 30px;
+}
+/* 헤더 ul 폰트사이즈 굵기 조절 */
+#s1_header > div > ul{
+    display: flex;
+    font-size: 18px;
+    font-weight: 800;
+}
+/* nav a태그 색 마진 할당 */
+#s1_header > div > ul > li > a{
+    color: #4d5159;
+    margin-right: 25px;
+}
+/* 헤더 네비부분 크기 할당 센터 정렬 */
+#s1_headerNav{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+/* 현제 페이지 색상 변경 */
+.s1_navTextOrage{
+    color: orange;
+}
+/* 메뉴 마우스 hover시 색상 변경 */
+.s1_navTextHover:hover{
+    color: #868b94;
+}
+/* 헤더 검색 부분 센터 정렬 */
+#s1_headerSuch{
+    display: flex;
+    align-items: center;
+}
+/* 헤더 검색 인풋 설정 */
+#s1_headerSuch > input{
+    height: 20px; width: 280px;
+    border: none;
+    background-color: #f2f3f6;
+    border-radius: 5px;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 15px;
+    color: #868b94;
+}
+/* 헤더 채팅하기 부분 설정 */
+#s1_headerSuch a{
+    border: 1px solid #d1d3d8;
+    border-radius: 5px;
+    width: 100px; height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #212124;
+    margin-right: 50px;
+}
+/* 헤더 채팅하기 마우스 hover 시 색상 변경 */
+#s1_headerSuch a:hover{
+    color: #636365;
+    background-color: #f6f7f9;
+}
+/* 헤더 끝 */
+/* 중앙 컨텐츠 시작 */
+#s1_contentRwap{
+    width: 100%;
+    margin-top: 10px;
+}
+/* 중앙 사진부분 백그라운드 크기 100% 할당 및 컬러 설정 */
+#s1_content_Back{
+    width: 100%;
+    height: 300px;
+    background-color: #fff1aa;
+}
+/* 베너 텍스트 사진 센터정렬 박스 */
+#s1_content{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+/* 중앙 배너 텍스트 설정 H3 */
+#s1_contetRwapBaner h3{
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.5;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    
+}
+/* 중앙 배너 텍스트 설정 P */
+#s1_contetRwapBaner p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.2;
+    position: absolute;
+    left: 100px;
+    top: 180px;
+}
+/* 중앙 배너 이미지 설정 */
+#s1_contetRwapBaner > img{
+    height: 300px;
+    position: absolute;
+    left: 450px;
+}
+/* 중앙 배너 끝 */
+/* 중앙 매물 거래 부분 시작 */
+/* h3 크기 ,폰트 , 센터 정렬 */
+#s1_contentRwap > h3{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 0px 35px 0px;
+}
+/* 상품 이미지 시작부분 전체 크기 지정 밑 가운데 정렬 */
+#s1_contentBottom{
+    width: 800px;
+    margin: 0 auto;
+}
+/* 상품 정렬 밑 마진 설정 */
+#s1_ConBox{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+/* 한상품당 크기 설정 시작 */
+.s1Box{
+    width: 300px;
+}
+.s1Box img{
+    width: 230px;
+    border-radius: 10px;
+}
+.s1Box h4{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.s1Box h5{
+    font-size: 15px;
+    font-weight: bold;
+    margin:10px 0px;
+}
+.s1Box p{
+    font-size: 13px;
+    line-height: 1.6;
+}
+.s1Box span{
+    color: #868ea0;
+}
+/* 한상품당 크기 설정 끝 */
+/* 인기매물 더보기 텍스트 크기 밑 센터정렬 */
+#s1_contentRwap > span{
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: underline;
+    color: #212529;
+}
+/* 컨텐츠 하단 네비 부분 시작 크기 , 백그라운드 컬러 지정*/
+#s1_contentNavRwap{
+    width: 100%;
+    height: 80px;
+    margin-top: 80px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+}
+/* 하단 부분 가운데 정렬 */
+#s1_contentNav{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+/* 중고거래 인기검색어 폰트 사이즈 , 언더라인 */
+#s1_contentNav > a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-right: 50px;
+}
+/* 컨텐츠 네비 정렬 */
+#s1_contentNav > ul{
+    display: flex;
+}
+/* 컨텐츠 네비 right 마진 설정 */
+#s1_contentNav > ul > li > a{
+    margin-right: 35px;
+}
+/* 푸터 시작 */
+
+#s1_footer{
+    width: 100%;
+    border-top: 1px solid #EAEBEE;
+}

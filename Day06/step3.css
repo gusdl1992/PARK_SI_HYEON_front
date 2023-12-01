@@ -30,5 +30,6 @@ a:visited{ color: blue; }
 } 
 
 .subMenu li{ list-style-type: none; padding: 3px;}
+/* 하위 숨김 메뉴 마우스 올릴시 컬러 변경 */
 .subMenu li:hover{background-color: blue; color: white;}
 
