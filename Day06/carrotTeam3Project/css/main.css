@@ -1,0 +1,535 @@
+*:focus{outline: none;}
+
+/* ---- Mheader ----- S */
+
+#Mheader{
+    
+    background-color: white;
+    position: sticky; /* header 고정 */
+    top: 0px;
+    
+}
+
+#MheaderInner {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+    #Mmenu {
+        display: flex; 
+        align-items: center;
+    
+    }
+        #Mlogo{margin: 0px 21px;}
+
+        #Mmenu>div>a{text-decoration: none; color: #4d5159; 
+            font-size: 18px; font-weight: bold;
+            margin: 14px;
+            
+        }
+        #Mmenu>div>a:hover {color: gray;}
+
+        #Msearch{
+            border: none;
+            border-radius: 4px;
+            padding: 12px;
+            width: 260px;
+            margin-right: 10px;
+            background-color: #e8e9ec;
+            font-size: 17px;
+        }
+
+        #Mchat{
+            border: #e8e9ec 1px solid;
+            background-color: white;
+            border-radius: 4px;
+            width: 100px; height: 40px;
+            font-weight: bold;
+            font-size: 15px;
+            color: #212124;
+    
+
+        }
+        #Mchat:hover{
+            background-color: rgb(223, 223, 223);
+            color: #4d5159;
+        }
+
+
+/* ---- Mheader ----- E */
+
+/* #Mmain{ margin-top: 62px;} sticky 하니까 필요 없어짐*/
+
+/* 메인 앱 스토어 start */
+.MAppStore{
+   display: flex;
+   margin-top: 30px;
+
+}
+    .MAppStoreImg{
+        position: relative;
+        top: 5px;
+    }
+
+    .MAppStore a{ 
+        display: inline-block;
+        text-align: center;
+        margin-right: 13px;
+        background-color: #ff6f0f;
+        padding: 20px 0px;
+        width:180px;
+        color: white;
+        font-weight: bold;
+        border-radius: 13px;
+        text-decoration: none;
+    }
+
+    .MAppStore a:hover{
+        background-color: #fc6603;
+    } 
+
+    /* 메인 앱 스토어 end */
+
+/* 메인 백 그라운드 컬러 start */
+
+    
+
+    #Mmainrow1{
+        background-color: #fffae0;
+    }
+
+    #Mmainrow2, #Mmarinrow4{
+        background-color: #f9f9f9;
+    }
+    #Mmainrow3{
+        background-color: #fff8f1;
+    }
+    #Mmainrow5{
+        background-color: #f6fdec;
+    }
+
+   
+ 
+/* 메인 백 그라운드 컬러 end*/
+        #Mmain>div>div{
+        display: flex;
+        width: 1280px;
+        margin: 0 auto;
+        
+    /* 메인 가로 정렬 start*/    
+        }
+        #Mmainrow1>div{
+            justify-content: space-around;
+        }
+
+        #Mmainrow2>div , #Mmainrow4>div{
+            justify-content: center;
+        }
+
+        #Mmainrow3>div, #Mmainrow5>div {justify-content: flex-start;
+            padding-left: 50px;
+        }
+
+    /*  메인 가로 정렬 end*/
+        .MmentS1,.MmentS2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+            .MmentS1>div{
+                padding: 20px;
+                line-height: 150%;
+            }
+
+            .MmentS2>div{
+                padding: 10px;
+                line-height: 150%;
+            }    
+
+                            /* 메인 폰트 */
+            #Mmentmain{
+                font-size: 55px;
+                font-weight: bold;
+                color: #212529;
+
+            }
+
+            .mentLabel{
+                font-weight: bold;
+                font-size: 18px;
+                color: #ff6f0f;
+            }
+
+
+            .Mment1{
+                font-size: 44px;
+                font-weight: bold;
+                color: #212529;
+            }
+                    
+            .Mment2{
+                font-size: 21px;
+                color: #7c7c7c;
+            }
+                            /* 메인 폰트 끝 */
+
+.MmainpageLinkB{
+    background-color: #e9ecef;
+    font-weight: bold;
+    color: #212529;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 13px;
+}
+
+.MmainpageLinkB:hover {
+    background-color: #c7c7c7;
+}
+
+#Md-moimflex{
+    display: flex;
+    justify-content: space-between;
+}
+
+    #Md-moimflex h3{
+        font-size: 15px;
+        font-weight: bold;
+        padding: 8px 0px;
+    }
+
+    #Md-moimflex span{
+        font-size: 12px;
+        line-height: 160%;
+        color: #7c7c7c;
+    }
+
+    /* 메인 끝 */
+
+    /* 푸터 start */
+
+    #Mfooter{ 
+        border-top: #eaebee 1px solid;
+    }
+
+        #Mfooter>div{
+            width: 780px;
+            margin: 0 auto;
+        }
+/* MftTop 시작*/
+
+#MftTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+#MftTopleft{
+    display: flex;
+    padding: 30px 0px;
+}
+
+#MftTopRight{
+    padding-top: 30px;
+}
+
+#MftTopRight  b {font-weight: bold;font-size: 15px;}
+
+#MftTop li{
+    padding: 20px 15px;
+}
+
+#MftTop li a{
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+}
+    #MftTop li a:hover{
+        text-decoration: underline;
+    }
+
+/* 메인 앱 스토어 start */
+.MftAppStore{
+    display: flex;
+    margin-top: 20px;
+ 
+ }
+     .MftAppStoreImg{
+         position: relative;
+         width: 20px;
+         top: 5px;
+     }
+ 
+     .MftAppStore a{ 
+         display: inline-block;
+         text-align: center;
+         margin-right: 8px;
+         background-color:  #f2f3f6 ;
+         padding: 10px 0px;
+         width:180px;
+         color: black;
+         font-weight: bold;
+         border-radius: 13px;
+         text-decoration: none;
+     }
+ 
+     .MftAppStore a:hover{
+         background-color: #868b94;
+     } 
+ 
+     /* 메인 앱 스토어 end */
+
+
+/* MftBTM 시작 */
+
+#MftBTM{
+    border-top: #eaebee 1px solid;
+    padding: 20px 0px 80px 0px;
+}
+
+#ceo{
+    font-size: 12px;
+    color: #868b94;
+    line-height: 150%;
+}
+    #ceo b {
+        font-weight: bold;
+    }
+
+    #ceo span {
+        margin: 5px;
+        }
+
+
+    .MftBTMlefta{
+        display: flex;
+    }
+
+
+    .MftBTMlefta >li >a{
+        font-size: 10px;
+        color: #868b94;
+        text-decoration: none;
+        display: block;
+        margin: 10px 20px 0px 0px;
+    }
+
+        #Mprivacy{
+        color: #4d5159;
+        font-weight: bold;
+        }
+
+        .MftBTMlefta a:hover{
+            text-decoration: underline;
+        }
+
+
+/* ---------------------------------------회사 소개 ----------------------------------------- */
+
+
+#Mmain22{
+    display: flex;
+ /*    justify-content: center;
+    flex-wrap: wrap; */
+
+    flex-direction: column;
+    align-items: center; /* ??? 이거 하니 중앙 정렬된 이유가 뭐지 아 column을 바꿔서 그렇구만*/
+    }
+
+
+
+#Mmainrow6 {
+    width: 1280px;
+}
+
+    #Mmainrow6{ font-size: 52px; font-weight: bold; line-height: 150%; padding: 120px 0px;}
+
+#Mmainrow7Img{ width: 1280px; border-radius: 40px;}
+
+#Mmainrow8{ font-size: 25px; font-weight: bold; line-height: 150%; padding: 30px 0px; width: 1280px;}
+
+#Mmainrow9{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+    #Mmainrow9>div {
+        width: 600px;
+    }
+
+    #Mmainrow9 img {
+        width: 600px;
+        border-radius: 30px;
+    }
+
+
+    #Mmainrow9L{ display: flex; flex-direction: column; justify-content: flex-end; }
+
+    .Mmainrow9-1{ font-size: 20px; font-weight: bold;}
+
+    #Mmainrow9-1{margin-bottom: 30px;}
+
+    .Mmainrow9-2{ font-size: 40px; font-weight: bold; line-height: 140%; margin-bottom: 30px;}
+
+    #Mmainrow11{margin-top: 200px;
+    display: block; width: 1280px;
+    }
+
+    #Mmainrow9 p{ font-size: 18px; line-height: 160%; color: #4d5159;}
+
+
+#Mmainrow10{
+    text-align: center;
+    background-image: url(../img/intro/81ce43ec-15a7-448d-829d-f5c7ecdf2b88_company_03.jpg);
+    background-repeat: no-repeat;
+    background-position: center; /* 포지션 센터 기억하기 */
+    background-size: cover /* 이거 헷갈리네 */;
+    width: 100vw; /* ★★★★ 반응형 이미지 사이즈 만들기 */
+
+    
+}
+
+    #Mmainrow10 >div{padding: 100px}
+
+        #Mmainrow10 >div>div{ font-size: 45px; margin: 20px; color: white; font-weight: bold;}
+
+        #Mmainrow10 p{ font-size: 17px; line-height: 150%; color: white;}
+
+#Mmainrow12{
+    width: 1280px;
+display: flex;
+flex-wrap: wrap; }
+
+    #Mmainrow12>div{
+        background-color: #f2f3f6;
+        width: 510px;
+        height: 300px;
+        border-radius: 30px;
+        padding: 50px;
+        margin: 0px 30px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    
+    #Mmainrow12>div>div{
+        font-size: 35px;
+        line-height: 135%;
+        font-weight: bold;
+    }
+
+
+
+
+#Mmainrow13{
+    margin-top: 100px;
+    background-color: #f7f8fa;
+    width: 100%; /* flex를 했기 떄문에(column) width안하면 사이즈 줄어드는것 같음. */
+}
+
+    #Mmainrow13>div{
+        width: 1280px;
+        margin: 0 auto; /* margin 0 안써서 많이 돌아옴 */
+        text-align: center;
+        padding: 150px 20px;
+        font-size: 35px;
+        font-weight: bold;
+
+    }
+
+    #MInvestor img{display: inline-block; width: 300px; padding: 20px;}
+
+
+    #MInvestor p{padding-bottom: 150px;}
+
+
+#Mmainrow14{
+    background-image: url(../img/intro/e5c5e6ce-a7f9-42c3-8312-ca9e0ec05290_company_04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    text-align: center;
+    padding: 100px 0px;
+
+}
+
+
+#Mmainrow14 p{ 
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#Mmainrow14 a{text-decoration: none; color: black; font-weight: bold;}
+
+#Mmainrow14>div>a:hover{ color: rgb(92, 92, 92);}
+
+#Mnewsicon{width: 21px; position: relative; top:4px}
+
+
+
+#MNewswindows{display: flex; justify-content: center; align-content: center;}
+
+    .MdanggnNews{padding: 20px 25px; background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 25px; text-align: left; margin: 10px;
+        width: 185px; height: 120px; line-height: 130%; font-size: 14px;
+    }
+
+    .MdanggnNews > div{display: flex; flex-direction: column;
+         justify-content: space-between; height: 100%; }
+
+
+    .MdanggnNews > div > div{width: 185px; }
+
+    .MdNewsdate{
+        font-size: 12px; color: #9ba7b8;
+    }
+ /* 이 쪽 부분 모르겠다... */
+
+/* #flexBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1000px 
+} *//* height가 규정되지 않은 값이라  */
+
+/* #flexBox p {
+    width: 50px; height: 50px;
+}
+ */
+
+ .MdanggnNews:hover{ font-size: 15px;   padding: 25px 30px; margin: 5px;}
+
+/*----------------------M footer2---------------------- */
+#Mfooter2Top {width: 1100px; margin: 0 auto; font-size: 14px; display: flex; justify-content: space-between;} /* 가운데 */
+
+#Mfooter2Top span{font-weight: bold;}
+
+#Mfooter2Top>div{display: flex; flex-wrap: wrap;}
+
+#Mfooter2Top>div>p, #Mfooter2Top>div>div{padding: 100px 50px 50px 0px;} 
+
+#Mfooter2Top a{text-decoration: none; color: #000;}
+
+#Mfooter2Top a:hover{ opacity: 0.7;}
+
+#Mfooter2Top img{ position: relative; top:2px}
+
+/* Mft2svg part */
+
+#Mft2svg{ display: flex; padding: 90px 50px 50px 0px;}
+
+    #Mft2svg>a{width: 25px; padding-left: 25px;}
+
+#Mfooter2Btm {width: 1100px; margin: 0 auto; 
+    font-size: 14px; justify-content: space-between; color:#4d5159;}
+
+    #Mfooter2Btm>div{padding: 30px 0px 100px;}
