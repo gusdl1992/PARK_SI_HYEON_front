@@ -1,0 +1,166 @@
+*{
+    padding: 0px; margin: 0px; /* 기본여백 제거 */
+    font-family: 굴림; /* 폰트 */
+    font-size: 12px; /* 폰트 사이즈 */
+    box-sizing: border-box; /* 안쪽여백, 테두리를 포함한 사이즈 모델 */
+    
+}
+
+a{ color: black; text-decoration: none;} /* a테그의 색상. 밑줄제거 */
+li{list-style: none;} /* 글머리 제거 */
+
+.njs1{
+    padding: 40px 0 50px;
+        
+}
+
+.njs2{
+    
+    width: 100%;
+    background-color: #ffe2d2;
+    margin: auto;
+    height: 300px;
+
+
+}
+
+.njs3{
+    margin: 0 auto;
+    max-width: 768px;
+    position: relative;
+}
+
+.njs4{
+    display: block;
+    padding: 40px 0 ;
+}
+
+.njs4 h1{
+    line-height: 150%;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.njs4 p{
+    line-height: 130%;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.njs4 input{
+    margin-top: 16px;
+    width: 95px; height: 35px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #FF6F0F;
+
+}
+
+.njs3 img{
+    width: 600px;
+    position: absolute;
+    top: 42px; left: 330px;
+}
+
+.njs5{
+    width: 768px;
+    margin: 0 auto;
+
+}
+
+.njs5 h2{
+    margin: 50px 0 30px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.atImg1{
+    width: 120px;
+    border-radius: 10px;
+}
+
+.njs6{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 43px;
+    
+}
+
+.njs7{
+    display: flex;
+    width: 372px;
+}
+
+.njs8{
+    margin: 0 0 0 20px;
+    
+}
+
+.t1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.t2{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.t3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.njs10{
+    display: flex;
+}
+
+.njs9{
+    background-color: #E5F5FD;
+    padding: 30px 30px 20px 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.njs13{
+    background-color: #FFEBDD;
+    padding: 30px 30px 20px 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.njs10 img{
+    width: 72px;
+}
+
+.njs10 p{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding-top: 8px;
+    padding-left: 20px;
+
+}
+
+.njs11{
+    display: flex;
+    justify-content: space-between;
+}
+
+.njs11 input{
+    height: 40px; width: 150px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #FF6F0F;
+    border: none;
+    border-radius: 3px;   
+
+}
+
+.njs12{
+    padding: 8px;
+}
