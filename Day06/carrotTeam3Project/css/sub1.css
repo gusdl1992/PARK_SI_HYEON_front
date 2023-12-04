@@ -484,7 +484,6 @@ a{text-decoration: none; color: black;}
 .bizpropil{
     width: 180px;
     height: 40px;
-    border: 1px solid red;
     background-color: #FF6F0F;
     border-radius: 5px;
     display: flex;
