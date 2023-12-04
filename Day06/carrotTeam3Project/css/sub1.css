@@ -14,6 +14,7 @@ a{text-decoration: none; color: black;}
 /* 로고 패딩 */
 #s1_headerLogo{
     padding-right: 30px;
+    height: ;
 }
 /* 헤더 ul 폰트사이즈 굵기 조절 */
 #s1_header > div > ul{
@@ -79,7 +80,7 @@ a{text-decoration: none; color: black;}
 /* 중앙 컨텐츠 시작 */
 #s1_contentRwap{
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 /* 중앙 사진부분 백그라운드 크기 100% 할당 및 컬러 설정 */
 #s1_content_Back{
