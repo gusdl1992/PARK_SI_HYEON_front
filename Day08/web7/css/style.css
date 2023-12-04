@@ -1,0 +1,286 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    color: #121212;
+
+}
+.ffJosefin{ /* header -> nav -> ul */
+    font-family: 'Josefin Sans' ,sans-serif;
+}
+.innerWrap{ /* p.138 */
+    width: 1240px;
+    margin: 0 auto;
+    padding: 80px 20px 0;
+}
+main h2{    /* p.139*/
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 0.05em; /* 글자 간격  */
+    margin-bottom: 80px;
+}
+/* p.140 */
+header{
+    background: url(../images/KakaoTalk_20231204_110243473.jpg);
+    background-repeat: no-repeat; /* 배경 반복 안함 */
+    background-position: right center;  /* 오른쪽 가운데 */
+    background-size: cover; /* 지정한 영역을  빈틈없이 덮을수있도록 가로세로 비율 유지 */
+    /* background: url(../images/KakaoTalk_20231204_110243473.jpg) no-repeat right center/cover; */
+    /* url(파일경로) , 배경반복 , 백그라운드이미지 위치 , 가로세로 비율 유지한채 확대 축소*/
+}
+/* p.142 */
+header .innerWrap{
+    height: 720px;
+    position: relative;
+}
+header h1{
+    padding-top: 120px;
+}
+/* p.142 ~ 145 */
+header .scroll{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+header .scroll img{
+    margin-top: 8px;
+}
+/* p.146 */
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* p.148 */
+}
+/* p146 ~ 147 */
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 1240px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+/* p.149 */
+.msgSec{
+    background-color: #fbfaf7;
+}
+.msgSec p{
+    text-align: center;
+    line-height: 1.75;
+    margin-bottom: 40px;
+}
+
+.msgSec p.illust{
+    margin-top: 80px;
+    margin-bottom: 0;
+    position: relative;  /* 하위요소의 position 기준점 */
+}
+.msgSec p.illust::before{
+    content: url(../images/KakaoTalk_20231204_115937110.png);
+    position: absolute;
+    left: 320px;
+    bottom: -30px;
+}
+.msgSec p.illust::after{
+    content: url(../images/KakaoTalk_20231204_115937207.png);
+    position: absolute;
+     right: 320px;
+    bottom: -30px;
+}
+/* p.153 */
+.dateSec{
+    background-color: #ffffff;
+    padding-bottom: 120px;
+}
+/* p.154 */
+.dateSec .layoutWrap{
+    display: flex;
+}
+.dateSec .layoutWrap > p{
+    flex-basis: 735px;
+}
+.dateSec .layoutWrap > div{
+    flex-basis: 465px;
+    padding-top: 100px;
+}
+/* p.155 */
+.dateSec .dateDetailSec{
+    font-size: 72px;
+    margin: 0 0 170px -100px;
+    background-color: #ffffff;
+    padding: 40px 64px;
+    line-height: 1.2;
+}
+/* p.156 */
+.word1{ font-size: 50px; }
+.word2{ font-size: 40px; }
+.word3{ font-size: 60px; }
+/* p.156 */
+.accessSec{ margin-left: 48px;}
+.accessSec h3{
+    color: #cfafa3;
+    font-size: 55px;
+    letter-spacing: .05em;
+    margin-bottom: 8px;
+}
+.accessSec p{ line-height: 1.6; }
+
+/* p.157 */
+.formSec{
+    background-color: #efe8d9;
+    padding-bottom: 60px;
+}
+form{
+    width: 600px;
+    margin: 0 auto;
+}
+/* p.158 */
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 5px;
+    padding: 4px 8px;
+}
+/* p.159 */
+input[type="radio"],
+input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    vertical-align: baseline;
+    margin-right: 4px;
+}
+/* p.160 */
+.attendRadio{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.attendRadio label{
+    margin: 0 20px;
+    font-size: 24px;
+}
+.allergyCheck label{
+    margin-right: 24px;
+}
+select{
+    background: #ffffff url(../images/arrow.png) no-repeat 98% 50%/17px 10px;
+    /*             배경색          이미지 파일 지정    반복여부  위치지정 / 크기지정(x축,y축) */
+}
+/* p.161 */
+textarea{
+    height: 148px;
+    margin-bottom: 30px;
+}
+form > p{
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.submitBtn{
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: #121212;
+    color: #ffffff;
+    padding: 18px 80px;
+}
+/* p.162 */
+footer{
+    background-color: #c7887f;
+    color: #f3e9e5;
+    padding: 14px 10px 20px;
+    text-align: center;
+}
+/* p.163 패럴랙스 효과  */
+.dateSec{
+    margin-bottom: 480px;   /* 배경을 보여질 여백 만들기 */
+}
+/* 가상 요소 선택자를 이용한 이미지(배경) 삽입 */
+.dateSec::after{
+    content: ""; /* 배경을 넣을 예정이라 내용물은 없는 상태 (백그라운드 이미지 사용) */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat center/cover;
+    z-index: -1;    /* 기본 요소들 보다 아래에 배치 */
+}
+
+/* p.165 트랜지션 애니메이션 효과 */
+input[type="submit"]:hover {
+    background-color: #c7887f;                        /* 배경색 바꾸기 */
+    margin-left: 20px;                                  /* 오른쪽으로 움직이기 */
+    transition-property: background-color,margin-left;  /* 또는  all */
+    transition-duration: 300ms;                         /*  0.3초 동안*/
+    transition-timing-function: ease-in;                /* 시작할때는 천천히 종료할때는 빨리  */
+    transition-delay: 0ms;                              /*  지연시간 없음 */
+    /* 트랜지션 단축 속성 작성법 */
+    /* transition: all 300ms ease-in 100ms; */
+    /* 어떤속성을 움직일지 , 몆초에 걸쳐 움직일지 , 어떤식으로 움직일지 , 몆초 지연을 두고 움직일지 */
+}
+
+/* p.167 키 프레임 애니메이션 효과 (키 프레임 설정) */
+@keyframes scrollAnimation{
+    0%{     /* 스크롤의 위치가 0 (시작점)  */
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    50%{    /* 스크롤의 위치가 50 (가운데 이전) */
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+    50.1%{  /* 스크롤의 위치가 50.1 (가운데 이후) */
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+    100%{   /* 스크롤의 위치가 100 (종료점) */
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+}
+/* p.169 키 프레임 애니메이션 적용*/
+header .scroll img{
+    animation-name: scrollAnimation;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count:  infinite;
+}
+
+/* 
+    p.illust{}      : p 요소의 class명이 illust 이면
+    .illust{}       : 전체요소의 class 명이 illust 이면
+*/
+/*  
+    p.150
+    !inportant > style속성 > id > class > 타입
+        1. p{ text-size : 16px !important; }
+        2. <div style="text-size:16px;">
+        3. #id{ text-size : 16px; }
+        4. .class{ text-size : 16px;  }
+        5. p{ text-size : 16px;  }
+        6. *{ text-size : 16px;  }
+
+    p.151 ~ 152
+    - HTML에 없던 내용물[ 주로 텍스트 ,이미지 ]을 CSS에서 넣어주기가 가능한 기능
+    ::before        : 요소의 앞부분 에 내용물 가상을 넣어주기
+    ::after         : 요소의 뒷부분 에 내용물 가상을 넣어주기
+        content     : 가상 요소의 내용물
+
+    flex-basis : 465px;
+        vs
+    width : 465px;
+
+        차이점 : 1. flex-direction : colums 일떄
+                    width : 고정        flex-basis : 전체사이즈 늘어남
+                 2. 요소보다 더 큰 컨텐츠가 들어왔을떄.
+                    width : 고정        flex-basis : 같이 늘어남
+*/
