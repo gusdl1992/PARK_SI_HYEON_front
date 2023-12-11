@@ -134,8 +134,8 @@ console.log(itemsD);
 /* p.172 확인문제
 
     1. 3 , 바나나 , 32
-    2. 4 , 오류발생(없는 인덱스)
-    3. X (배우지 않은 함수들이 나옴)
+    2. 4 , array.push(5) --> push 이후의 배열 길이 => 5(consol.log 결과)
+    3. strA => 비파괴  , strB => 파괴 , strC => 비파괴 , strD => 비파괴
 
 
 */
