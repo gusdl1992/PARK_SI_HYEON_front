@@ -130,7 +130,7 @@ for( let i = 1 ; i <= 10 ; i++ ){
     for( let i =1 ; i<=100 ; i++ ){
         if(i % 7 == 0){ sum += i; } // 만약에 i가 나누기 7을 했을떄 나머지가  0이면 i는 7의 배수
     }
-    console.log(`1~100까지 7배수 합 : ${sum}`)
+    console.log(`1~100까지 7배수 합 : ${sum}`);
 
 
     // for 중첩 [ 상위 for문 1회전마다 하위 for문 모두 회전 ]
@@ -157,6 +157,3 @@ for( let i = 1 ; i <= 10 ; i++ ){
             console.log(` ${단} X ${곱} = ${단*곱} `);
         } // 2 for e
     } // 1 for e
-    
-
-    
