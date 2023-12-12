@@ -6,7 +6,7 @@
         - 논리(범위논리X) 판단X / 경우의수가 값으로 정해져 있는 경우
 
         1. 형태
-            swith(자료){
+            swith(자료/계산식){
                 case 조건A : 실행코드; break;
                 case 조건B : 실행코드; break;
                 case 조건C : 실행코드; break;

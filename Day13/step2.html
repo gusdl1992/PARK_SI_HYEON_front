@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='step2.js'></script>
+</head>
+<body>
+    <!-- 
+        JS과제 [ 주차장 정산기 ]
+        요구사항
+         1. 입차 
+            1. 차번호 숫자 4자리로 입력 받기 ( input = text )
+            2. 입차시간을 time(type = "time") 
+
+        2. 저장
+            배열[ 차번호,입차시간 ] 에 저장
+
+        3. 출력
+            alert("입차완료")
+        ==================================================
+        4. 출차
+            1. 차번호 숫자4자리 입력받기 type = text
+            2. 출차시간을 받기 type = time
+
+        5. 계산
+            해당 차번호의 입차 시간과 출차시간을 계산해서 
+            30분 내외면 무료 , 30분 이후부터 10분당 1000원
+
+        6. 출력
+            alert(요금)
+            또는
+            alert(입차한 차량이없습니다.)
+
+        ===================== 추가요구사항 =================================
+        1. 입차/출차시 차량번호 4자리만 입력할수 있도록. 유효성 검사 아니면 입차 불가능
+        2. 입차/출차 시간을 입력 안했으면 입차/출차 불가능.
+        3. 일별(오늘) 매출 현황 HTML 에 출력하기 [ 배열추가 , 함수추가]
+        4. CSS 간단하게
+    -->
+
+    <div style="display: flex;">
+        <div style="width: 50%; border: 1px solid black;">
+            <h3> 입차</h3>
+            차량 번호 : <input id="carInNumber" type="text"/>  <br/>
+            입차 시간 : <input id="carInTime" type="time"/>  <br/>
+            <input onclick="입차()" type="button" value="입차"/>
+        </div>
+        <div style="width: 50%; border: 1px solid black;" >
+            <h3> 출차</h3>
+            차량번호 :<input id="carOutNumber" type="text"/>    <br/>
+            출차 시간<input id="carOutTime" type="time"/>    <br/>
+            <input  onclick="출차()" type="button" value="출차"/>
+        </div>
+        <!-- 비밀번호 수정 후 로그인 되는지 한번 만들어 보자. -->
+
+    </div>
+
+
+</body>
+</html>
