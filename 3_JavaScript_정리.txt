@@ -67,7 +67,7 @@ JAVA 와 JAVASCRIPT 는 다르다.
 	3. confirm("출력하고싶은 문구");						: 확인창 (확인 = true/취소 = false) 에 출력하기
 	4. prompt("출력하고싶은 문구");							: 입력창( 입력상자[input] , 확인 = 입력값 반환 / 취소 = false )
 	5. document.write("HTML에 출력하고싶은 문구");			: HTML에 출력 함수					  	
-	6. document.특정식별자.html = "HTML 에출력하고싶은말"	 : 특정 요소/마크업 에 출력 함수
+	6. document.특정식별자.innerHTML = "HTML 에출력하고싶은말"	 : 특정 요소/마크업 에 출력 함수
 
 2. 기본 자료형
 	- 자료 : 프로그램이 처리할수 있는 모든 것
