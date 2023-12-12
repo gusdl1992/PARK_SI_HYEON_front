@@ -68,6 +68,8 @@ for( let i = 0 ; i < todos.length; i++ ){   //for s
     // 인덱스 대신에 i 활용.
 }// for e
 
+
+// p.180 역순.
 for( let i = todos.length-1 ; i >= 0 ; i-- ){   //for s
     // i는 마지막 인덱스 부터 0 까지 1씩 감소 하면서 console.log 반복 실행
     console.log(`${i}번째 할 일 : ${todos[i]}`);
@@ -75,7 +77,7 @@ for( let i = todos.length-1 ; i >= 0 ; i-- ){   //for s
 }// for e
 
 let outPrint = '';  // 공백이 저장된 변수.
-// 예1) 1부터 10 이하까지 1씩 증가 반복[ 한줄표기 ]; console.log() 하나당 줄바꿈 자동 
+// 예2) 1부터 10 이하까지 1씩 증가 반복[ 한줄표기 ]; console.log() 하나당 줄바꿈 자동 
 
 for( let i = 0 ; i < 10 ; i++){
     outPrint += `  ${i} `;  // 공백도 문자!
@@ -83,7 +85,7 @@ for( let i = 0 ; i < 10 ; i++){
 console.log(outPrint);
 
 
-// 예2) 1부터 10 이하까지 1씩 증가 반복 [ ul 표시 ] 
+// 예3) 1부터 10 이하까지 1씩 증가 반복 [ ul 표시 ] 
 outPrint = ''; // 위에서 사용했던 변수 공백으로 수정
 for( let i = 1 ; i <= 10 ; i++ ){
     outPrint += ` <li> ${i} </li> ` // li 사용
@@ -91,13 +93,13 @@ for( let i = 1 ; i <= 10 ; i++ ){
 // [ HTML출력 ]
 document.querySelector('ul').innerHTML = outPrint;
 
-// 예3) 1부터 10이하까지 1씩 증가 반복 [ 누적합계 ]
+// 예4) 1부터 10이하까지 1씩 증가 반복 [ 누적합계 ]
 let sum = 0; // 반복전에는 누적합이 0
 for( let i = 1 ; i <= 10 ; i++ ){
     sum += i; // i를 sum에 더한후  sum에 대입
 }
 /*
-    예3 반복문 순서도.
+    예4 반복문 순서도.
         초기값 : i = 1   , sum = 0
         for 시작
             i               조건[ i <= 10 ]      실행문[ sum += i ]     증감식[ i++ ]
