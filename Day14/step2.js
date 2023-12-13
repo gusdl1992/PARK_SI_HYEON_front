@@ -238,7 +238,7 @@ if( line9 % 2 == 0 ){   // 입력된 수가 짝수일 경우
             html += '<td>★</td>';
         }
         html += '</tr>';
-        html += '<br/>';
+
     }
     //하단
     for( let i = line9 ; i >= 1 ; i-- ){
@@ -250,7 +250,7 @@ if( line9 % 2 == 0 ){   // 입력된 수가 짝수일 경우
             html += '<td>★</td>';
         }
         html += '</tr>';
-        html += '<br/>';
+
     }
     // [3. 출력 ]
     const tableObj = document.querySelector('#table9');
@@ -268,7 +268,6 @@ if( line9 % 2 == 0 ){   // 입력된 수가 짝수일 경우
             html += '<td>★</td>';
         }
         html += '</tr>';
-        html += '<br/>';
     }
     //하단
     for( let i = line9 ; i >= 1 ; i-- ){
@@ -280,7 +279,6 @@ if( line9 % 2 == 0 ){   // 입력된 수가 짝수일 경우
             html += '<td>★</td>';
         }
         html += '</tr>';
-        html += '<br/>';
     }
     // [3. 출력 ]
     const tableObj = document.querySelector('#table9');
