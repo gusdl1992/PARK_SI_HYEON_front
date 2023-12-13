@@ -1,4 +1,6 @@
 
+/*
+
 let output = '';
 
 // 문제1) 입력받은 수 만큼 * 출력 
@@ -177,6 +179,9 @@ if(line10 % 2 == 0 ){
     } // 1for e
     console.log(output);
 }
+
+ */
+
 /*
 ex)7 입력됬을떄
 1   7
@@ -188,3 +193,100 @@ ex)7 입력됬을떄
 7   1
 패턴 
 */
+
+// 문제 10-2
+function 문제10(){
+    // [1. 입력 ]
+    const line = Number(document.querySelector('#line10').value);
+    // [2. 처리 ]
+    let html ='';
+    for( let r = 1 ; r <= line; r++ ){
+
+    // 행시작
+    html += '<tr>';
+    for( let c = 1 ; c <= line; c++ ){
+        if( c == r  ){html += '<td>★</td>';}
+        else if( c+r == line+1 ){html += '<td>★</td>';}
+        else{html += '<td> </td>';}
+        
+    }
+
+    // 행끝
+    html += '</tr>';
+}
+    // [3. 출력 ]
+    const tableObj = document.querySelector('#table10');
+    tableObj.innerHTML = html;
+
+    console.log(tableObj);
+
+}
+
+function 문제9(){
+// 문제9) 입력받은 줄 수 만큼 * 출력  [ ex) 10 ]
+let html ='';
+let line9 = Number(document.querySelector('#line9').value);
+if( line9 % 2 == 0 ){   // 입력된 수가 짝수일 경우
+    line9 = line9/2     // 입력된 값을 /2 하여 절반값을 상단 하단에서 사용
+    //상단
+    for( let i =1 ; i <= line9 ; i++ ){
+        html += '<tr>';
+        for( let j = line9 ; j > i; j--){
+            html += '<td> </td>';
+        }
+        for( let m = 0; m < (2*i)-1; m++ ){
+            html += '<td>★</td>';
+        }
+        html += '</tr>';
+        html += '<br/>';
+    }
+    //하단
+    for( let i = line9 ; i >= 1 ; i-- ){
+        html += '<tr>';
+        for( let j = line9 ; j > i; j--){
+            html += '<td> </td>';
+        }
+        for( let m = 0; m < (2*i)-1; m++ ){
+            html += '<td>★</td>';
+        }
+        html += '</tr>';
+        html += '<br/>';
+    }
+    // [3. 출력 ]
+    const tableObj = document.querySelector('#table9');
+    tableObj.innerHTML = html;
+    console.log(tableObj);
+}else{  // 입력받은 수가 홀수일 경우
+    line9 = parseInt(line9/2)   // 소숫점을 버리고 상단 하단 사용
+    //상단
+    for( let i =1 ; i <= line9+1 ; i++ ){
+        html += '<tr>';
+        for( let j = line9+1 ; j > i; j--){
+            html += '<td> </td>';
+        }
+        for( let m = 0; m < (2*i)-1; m++ ){
+            html += '<td>★</td>';
+        }
+        html += '</tr>';
+        html += '<br/>';
+    }
+    //하단
+    for( let i = line9 ; i >= 1 ; i-- ){
+        html += '<tr>';
+        for( let j = line9+1 ; j > i; j--){
+            html += '<td> </td>';
+        }
+        for( let m = 0; m < (2*i)-1; m++ ){
+            html += '<td>★</td>';
+        }
+        html += '</tr>';
+        html += '<br/>';
+    }
+    // [3. 출력 ]
+    const tableObj = document.querySelector('#table9');
+    tableObj.innerHTML = html;
+    console.log(tableObj);
+}
+
+}
+
