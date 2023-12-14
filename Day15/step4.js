@@ -1,4 +1,7 @@
 // 전역 자료 [ 함수 밖에서 선언 ]
+// 추가 과제 함수 미사용으로 천원단위 , 변환 고민하다.. .toLocaleString() 함수 썻습니다..
+// 아이디어는 떠올라서 정리해놨는데.. 잘안되네요..
+
 const 날짜목록 = [];    // 할일의 내용을 저장
 const 항목목록 = [];    // 할일의 상태를 저장
 const 금액목록 = [];    // 할일의 상태를 저장
@@ -8,11 +11,10 @@ const 금액목록 = [];    // 할일의 상태를 저장
 function 입력함수(){
     console.log("등록함수")
     //값 받아오기
-    const 날짜 = document.querySelector('#contentDay').value
-    const 항목 = document.querySelector('#contentList').value
-    const 금액 = document.querySelector('#contentMoney').value
-    let 테스트 = 항목.split("")
-    let 테스트2 =' ';
+    let 날짜 = document.querySelector('#contentDay').value
+    let 항목 = document.querySelector('#contentList').value
+    let 금액 = document.querySelector('#contentMoney').value
+    
     // 값 배열에 대입
     날짜목록.push(날짜);
     항목목록.push(항목);
@@ -24,7 +26,7 @@ function 입력함수(){
     document.querySelector('#contentList').value = ' ' ; 
     document.querySelector('#contentMoney').value = ' ' ; alert('등록성공')
     
-    console.log(테스트)
+   
 
 }
 
@@ -56,17 +58,19 @@ function 출력함수(){
         html += `<div class="todo"> 
                     <div class="Day">${날짜목록[i]}</div>
                     <div class="list">${항목목록[i]}</div>
-                    <div class="money">${금액목록[i]}원</div>
+                    <div class="money">${금액목록[i].toLocaleString()}원</div>
                     <div class="Butn"><input onclick="삭제함수(${i})" type="button" value="삭제"></div>
                 </div> `
     }
 
     for( let i = 0; i < 날짜목록.length ; i++ ){
         금액 += 금액목록[i];
-        total = `<h3>총합계 : ${금액} 원</h3>`
+        total = `<h3>총합계 : ${금액.toLocaleString()} 원</h3>`
     }
     // 3. [ 대입 ] innerHTML 에 저장된 변수를 대입
     todoBottom.innerHTML = html;
     totalMoney.innerHTML = total;
     
 }
+
+
