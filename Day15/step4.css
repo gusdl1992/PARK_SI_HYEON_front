@@ -1,0 +1,123 @@
+/* 공통 CSS */
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{ 
+    box-sizing: border-box; 
+    font-size: 16px;
+    font-family: 'JalnanGothic';
+    margin: 0 auto;
+}
+
+/* 전체구역 */
+#wrap{ width: 500px; margin: 0 auto; } 
+input{border: none;}
+h1{ 
+font-size: 50px; 
+text-align: center;
+margin-top: 100px;
+line-height: 1.4;
+letter-spacing: 20px;
+}
+.undurline{
+    width: 120px;
+    height: 1px;
+    border-bottom: 5px solid #00ECAE;
+    margin: 0 auto;
+}
+#accountBookIn{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap:wrap;
+    position: relative;
+}
+#accountBookIn div{
+    margin: 5px;
+    border-bottom: 1px solid gray;
+}
+#accountBookIn div > input{
+    width: 250px;
+    padding: 10px;
+    
+}
+#accountBookIn input[type="button"]{
+    cursor: pointer;
+}
+
+#butn2{
+    padding: 50px;
+    position: absolute;
+    left: 320px;
+    top: 20px;
+    border-radius: 10px;
+    background-color: #00ECAE;
+}
+
+
+/* 중간시작 */
+#contentrawp{display: flex; flex-wrap: wrap; justify-content: center; text-align: center; width: 100%;}
+#centerHerd{display: flex; margin-top: 30px; }
+#centerHerd > div{
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.Day1{width: 150px;display: flex;
+    justify-content: space-between; /* 가로정렬*/
+    align-items: center; 
+    }
+.list1 , .money1 , .Butn1{
+    width: 100px;
+    display: flex;
+    justify-content: space-between; /* 가로정렬*/
+    align-items: center;            /* 세로정렬 */
+}
+
+.todo{
+    display: flex;
+    justify-content: space-between; /* 가로정렬*/
+    align-items: center;            /* 세로정렬 */
+    font-size: 20px; font-weight: bold;
+    margin: 20px 1px; padding: 5px 10px;
+}
+.todo > .btnBox > input{
+    font-size: 12px;
+    border: none;
+    box-shadow: 0px 0px 3px #9f6363;
+}
+
+.Day{width: 150px;display: flex;
+    justify-content: space-between; /* 가로정렬*/
+    align-items: center; 
+    }
+.list , .money , .Butn{
+    width: 100px;
+    display: flex;
+    justify-content: space-between; /* 가로정렬*/
+    align-items: center;            /* 세로정렬 */
+}
+
+
+
+
+
+
+#total{
+    width: 500px; height: 50px;
+    text-align: center;
+    background-color: #00ECAE;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+

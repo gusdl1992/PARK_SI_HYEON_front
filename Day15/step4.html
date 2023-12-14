@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step4.css'>
+    <script src='step4.js'></script>
+</head>
+<body>
+    
+    <div id="wrap">
+        <h1>가계부</h1>
+        <div class="undurline"></div>
+        <div id="accountBookIn">       <!-- 입력 -->
+            <div>날짜 :<input id="contentDay" type="date"></div>
+           <div>항목 :<input id="contentList" type="text" placeholder="항목"></div>
+           <div>금액 :<input id="contentMoney" type="text" placeholder="금액"></div>
+           <input id="butn2" onclick="입력함수()" type="button" value="등록">
+        </div>
+
+
+        <div id="contentrawp">       <!-- 출력 -->
+            <div id="centerHerd">
+                <div class="Day1">날짜</div>
+                <div class="list1">항목</div>
+                <div class="money1">금액</div>
+                <div class="Butn1">비고</div>
+            </div>
+            <div id="content" >
+                
+            </div>
+
+            <div id="total">
+              
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+</html>
+
+
+<!-- 
+    <div class="todo"> 
+        <div class="content">자바 공부하기</div>
+        <div class="btnBox">
+            <input onclick="변경함수(2)" type="button" value="완료">
+            <input onclick="삭제함수(2)" type="button" value="삭제">
+        </div>
+    </div> 
+ -->
+<!-- 
+    주제 : 가계부
+    [ 요구사항 ]
+        [조건] 배열 3개사용 . 함수 ( 등록함수, 출력함수 , 삭제함수)
+        [1. 입력]
+            날짜 , 항목 , 금액
+        [2. 출력]
+            날짜 , 항목 , 금액 출력 [ 저장된 배열내 모든요소 ]
+        [3. 삭제]
+            선택된 항목을 삭제.
+        [4. 총합계]
+
+    추가 요구사항
+    1. CSS 간단히
+    2. 천단위 쉼표 만들어주는 함수 [ JS에서 제공하는 함수X ] 
+    3. 날짜를 무작위로 등록해도 오름차순으로 출력되게
+
+
+
+    출력
+    <div class="Day">2023-12-05</div>
+                <div class="list">택비</div>
+                <div class="money">2000원</div>
+                <div class="Butn"><input onclick="삭제함수()" type="button" value="삭제"></div>
+
+
+
+                <div id="total">
+                <h3>총합계 : </h3>
+            </div>
+
+
+
+
+
+            <div class="todo"> 
+                    <div class="Day">2023-12-05</div>
+                    <div class="list">택비</div>
+                    <div class="money">2000원</div>
+                    <div class="Butn"><input onclick="삭제함수()" type="button" value="삭제"></div>
+                </div> 
+ -->

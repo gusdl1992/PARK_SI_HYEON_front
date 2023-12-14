@@ -26,6 +26,14 @@
 }
 
 /* 출력 구역 */
+
+#centerHerd{
+    display: flex;
+    justify-content: space-between; /* 가로정렬*/
+    align-items: center;      
+}
+
+
 .todo{
     display: flex;
     justify-content: space-between; /* 가로정렬*/
