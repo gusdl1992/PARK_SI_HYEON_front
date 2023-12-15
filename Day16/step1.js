@@ -15,17 +15,25 @@ function 등록함수(){ console.log('등록함수() 실행');
     const 턱걸이 = document.querySelector('#턱걸이').value; 
     // const 총점 = document.querySelector('#총점').value; console.log( 총점 );
     // const 등급 = document.querySelector('#등급').value; console.log( 등급 );
-
-
-    //[2.처리] 
+    
+    
+    const nIndex = 이름목록.indexOf(이름);  // 배열이름 비교 
+    //이름 중복 검사 후 -1 true 시 회원등록 , 아닐시 이미 등록된 회원 안내
+    if(nIndex == -1){
+        //[2.처리] 
     이름목록.push( 이름 );  
     팔굽혀펴기목록.push( 팔굽혀펴기); 
     윗몸일으키기목록.push( 윗몸일으키기 );
     턱걸이목록.push( 턱걸이 );
-    // 총점목록.push( 총점 );
+    document.querySelector('#이름,#이름,#윗몸일으키기,#턱걸이').value = ``; alert('등록 성공');
+    }else{
+        alert("이미 등록된 회원입니다.")
+    }
+
+  
 
     console.log( 이름 ); console.log( 팔굽혀펴기 );console.log( 윗몸일으키기 );console.log( 턱걸이 );
-    document.querySelector('#이름,#이름,#윗몸일으키기,#턱걸이').value = ``; alert('등록 성공');
+    
     
      //[3.출력]
 
@@ -120,7 +128,7 @@ function 출력함수(){
                         <div class="list_1">${팔굽혀펴기목록[i]}개</div>
                         <div class="list_2">${윗몸일으키기목록[i]}개</div>
                         <div class="list_3">${턱걸이목록[i]}개</div>
-                        <div class="total">${Number(팔굽혀펴기목록[i])+Number(윗몸일으키기목록[i])+Number(턱걸이목록[i])}</div>
+                        <div class="total">${Number(팔굽혀펴기목록[i])+Number(윗몸일으키기목록[i])+Number(턱걸이목록[i])}점</div>
                         <div class="grade">${등급(i)}</div>
                         <div class="butn"><input onclick="삭제함수(${i})" type="button" value="삭제"></div>
                     </div>`
