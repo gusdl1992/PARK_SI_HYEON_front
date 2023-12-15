@@ -26,7 +26,6 @@ function 입력함수(){
     document.querySelector('#contentList').value = ' ' ; 
     document.querySelector('#contentMoney').value = ' ' ; alert('등록성공')
     
-   
 
 }
 
