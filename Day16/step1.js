@@ -30,10 +30,7 @@ function 등록함수(){ console.log('등록함수() 실행');
         alert("이미 등록된 회원입니다.")
     }
 
-  
-
     console.log( 이름 ); console.log( 팔굽혀펴기 );console.log( 윗몸일으키기 );console.log( 턱걸이 );
-    
     
      //[3.출력]
 
