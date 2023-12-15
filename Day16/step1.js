@@ -5,13 +5,6 @@ const 윗몸일으키기목록 = [];    // 윗몸일으키기 저장
 const 턱걸이목록 = [];         // 턱걸이 저장
 
 
-// 기본값 테스트 출력
-console.log(이름목록);
-console.log(팔굽혀펴기목록);
-console.log(윗몸일으키기목록);
-console.log(턱걸이목록);
-
-
 
 // 1. 등록 함수 선언
 function 등록함수(){ console.log('등록함수() 실행');
@@ -37,6 +30,7 @@ function 등록함수(){ console.log('등록함수() 실행');
      //[3.출력]
 
     출력함수();
+    텍스트초기화()
 }
 /* 어떻게 로직을 정해야 등급이 나올까 */
 
@@ -69,6 +63,7 @@ function 삭제함수( 삭제할인덱스 ){      //f start
 
 
     출력함수()
+    텍스트초기화()
 
 }   //f end
 
@@ -104,10 +99,11 @@ function 수정함수(){    // 수정
         }else{
             턱걸이목록[nIndex] = 턱걸이목록[nIndex]
         }
-
+        텍스트초기화()
 
     }else{  // 같은 이름이 없으면
         alert("이름이 없습니다.")
+        텍스트초기화()
     }
     출력함수()
 
@@ -134,4 +130,11 @@ function 출력함수(){
     const contentOutput = document.querySelector('#contentOutput')
 
     contentOutput.innerHTML=html;
+}
+
+function 텍스트초기화(){
+    document.querySelector('#이름').value = ' ' ;
+    document.querySelector('#팔굽혀펴기').value = ' ' ;
+    document.querySelector('#윗몸일으키기').value = ' ' ;
+    document.querySelector('#턱걸이').value = ' ' ;
 }
