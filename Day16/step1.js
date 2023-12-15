@@ -14,3 +14,19 @@ console.log(턱걸이목록);
 console.log(총점목록);
 console.log(등급목록);
 
+
+function 등록함수(){
+
+}
+
+function 수정함수(){
+
+}
+
+function 삭제함수(){
+
+}
+
+function 출력함수(){
+    
+}
