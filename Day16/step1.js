@@ -117,9 +117,9 @@ function 출력함수(){
         for( let i = 0; i<이름목록.length; i++){
             html +=  `<div class="output">        <!-- JS 출력함수() 부분 가이드 -->
                         <div class="name">${이름목록[i]}</div>
-                        <div class="list_1">${팔굽혀펴기목록[i]}</div>
-                        <div class="list_2">${윗몸일으키기목록[i]}</div>
-                        <div class="list_3">${턱걸이목록[i]}</div>
+                        <div class="list_1">${팔굽혀펴기목록[i]}개</div>
+                        <div class="list_2">${윗몸일으키기목록[i]}개</div>
+                        <div class="list_3">${턱걸이목록[i]}개</div>
                         <div class="total">${Number(팔굽혀펴기목록[i])+Number(윗몸일으키기목록[i])+Number(턱걸이목록[i])}</div>
                         <div class="grade">${등급(i)}</div>
                         <div class="butn"><input onclick="삭제함수(${i})" type="button" value="삭제"></div>
