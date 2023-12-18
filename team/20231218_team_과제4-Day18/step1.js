@@ -1,8 +1,6 @@
+
 // 전역변수
 const 회원정보Array = [];    // 회원객체 배열 저장
-
-
-
 
 // 1. 등록 함수 선언
 function 등록함수(){ console.log('등록함수() 실행');
@@ -16,8 +14,6 @@ function 등록함수(){ console.log('등록함수() 실행');
     // 배열에서 indexOf 사용 안되어 findIndex 사용
     const nIndex = 회원정보Array.findIndex(i => i.이름 == 이름); 
     
-
-    console.log(nIndex)
     const namebin = ''; // 이름이 빈칸인지 비교 상수
 
     if(!(이름 == namebin)){     // 빈칸이 입력 됬는지 비교
@@ -136,3 +132,35 @@ function 출력함수(){
 
 }
 
+/*
+    전역변수 
+    const 회원정보Array = [ 회원정보 , 회원정보 , 회원정보 ];    // 회원객체 배열 저장
+
+    지역변수(함수별)
+    - 변수/상수
+    1. 등록()
+        const 이름          => HTML ipunt 입력된 이름 값 저장
+        const 팔굽혀펴기    => HTML ipunt 입력된 팔굽혀펴기 값 저장
+        const 윗몸일으키기  => HTML ipunt 입력된 윗몸일으키기 값 저장
+        const 턱걸이        => HTML ipunt 입력된 턱걸이 값 저장
+        const 회원정보      => 객체 생성 { 이름 , 팔굽혀펴기 , 윗몸일으키기 ,턱걸이  }
+        const nIndex        => 회원이름 비교 값 결과 저장
+        const namebin       => 공백 비교 빈문자열 상수
+    
+    2. 등급()
+        let result = ""     => 리턴용 빈문자열 변수
+        let 총점            => 총점 합계 계산 변수
+    
+    3. 삭제함수()
+
+    4. 수정함수()
+        let 수정이름        => 수정버튼 클릭시 input 이름 값
+        let 팔굽혀펴기      => 수정버튼 클릭시 input 팔굽혀펴기 값
+        let 윗몸일으키기    => 수정버튼 클릭시 input 윗몸일으키기 값
+        let 턱걸이          => 수정버튼 클릭시 input 턱걸이 값
+        const nIndex        => 수정버튼 클릭시 이름 수정이름과 회원정보Array 이름 비교 결과 값
+    
+    5. 출력함수()
+        let html = '';      => 값을 더할 빈문자열 변수 선언
+        const contentOutput => HTML 해당 ID #contentOutput 값을 출력을 위해 contentOutput 위치 저장
+*/
