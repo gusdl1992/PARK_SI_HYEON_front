@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #F5DEB3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .board {
+            display: flex;
+            flex-direction: column;
+            margin: 50px;
+        }
+
+        .board .row {
+            display: flex;
+        }
+
+        .board .row > div {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .board .row > div::before, .board .row > div::after {
+            content: "";
+            position: absolute;
+            background: #8B4513;
+        }
+
+        .board .row > div::before {
+            left: 50%;
+            height: 1px;
+            width: 100%;
+            transform: translateX(-50%);
+        }
+
+        .board .row > div::after {
+            top: 50%;
+            width: 1px;
+            height: 100%;
+            transform: translateY(-50%);
+        }
+
+        .board .row > div.stone::before, .board .row > div.stone::after {
+            /*background: transparent; !* 주석 해제 시, 돌이 판을 덮음 *!*/
+        }
+
+        .board .row > div > div {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .board .row:first-child > div::before {
+            height: 2px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .board .row:last-child > div::before {
+            height: 2px;
+            bottom: 50%;
+            transform: translate(-50%, 50%);
+        }
+
+        .board .row > div:first-child::after {
+            width: 2px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .board .row > div:last-child::after {
+            width: 2px;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        .info-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px;
+        }
+
+        .info-panel .button-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .info-panel button {
+            margin-right: 10px;
+        }
+
+        .info-panel table {
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        .info-panel th, .info-panel td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="board" class="board"></div>
+    <div class="info-panel">
+        <div class="button-container">
+            <button onclick="resetBoard()">게임 초기화</button>
+            <button onclick="requestUndo()">취소 요청</button>
+        </div>
+        <table id="info-table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Player Black</th>
+                <th>Player White</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>점수:</td>
+                <td id="score-x">0</td>
+                <td id="score-o">0</td>
+            </tr>
+            <tr>
+                <td>취소 요청:</td>
+                <td id="undo-x-requests">0</td>
+                <td id="undo-o-requests">0</td>
+            </tr>
+            <tr>
+                <td>취소 사용:</td>
+                <td id="undo-x-used">0</td>
+                <td id="undo-o-used">0</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    // 게임 상태 변수들 선언
+    let board = [];
+    let moveHistory = [];
+    const BOARD_SIZE = 15;
+    let currentPlayer = "Black";
+    let previousPlayer = "White";
+    let scoreX = 0;
+    let scoreO = 0;
+    let undoRequests = {
+        Black: {requests: 0, used: 0},
+        White: {requests: 0, used: 0}
+    };
+
+    // 게임 초기화
+    function resetBoard() {
+        board = Array(BOARD_SIZE).fill().map(() => Array(BOARD_SIZE).fill(""));
+        moveHistory = [];
+        currentPlayer = "Black";
+        drawBoard();
+    }
+
+
+    // 승리 확인 메소드
+    function checkWin(i, j) {
+        return (
+            checkLine(i, j, -1, 0) ||
+            checkLine(i, j, 0, -1) ||
+            checkLine(i, j, -1, -1) ||
+            checkLine(i, j, -1, 1)
+        );
+    }
+
+    // 승리 판단
+    function checkLine(row, col, dRow, dCol) {
+        let count = 0;
+        for (let i = -4; i <= 4; i++) {
+            let r = row + i * dRow;
+            let c = col + i * dCol;
+            if (r >= 0 && r < BOARD_SIZE && c >= 0 && c < BOARD_SIZE && board[r][c] === currentPlayer) {
+                if (++count === 5) return true;
+            } else {
+                count = 0;
+            }
+        }
+        return false;
+    }
+
+
+    // 돌 놓기
+    function makeMove(i, j) {
+        if (board[i][j] !== "") return;
+        board[i][j] = currentPlayer;
+        moveHistory.push({i, j});
+        if (checkWin(i, j)) {
+            alert(`Player ${currentPlayer} wins!`);
+            if (currentPlayer === "Black") {
+                scoreX++;
+            } else {
+                scoreO++;
+            }
+            resetBoard();
+            return;
+        }
+        previousPlayer = currentPlayer;
+        currentPlayer = currentPlayer === "Black" ? "White" : "Black";
+        drawBoard();
+    }
+
+    // 취소 요청
+    function requestUndo() {
+        let isOk = confirm(`${currentPlayer === "Black" ? "Player White" : "Player Black"}, 취소를 허가하시겠습니까?`);
+        undoRequests[previousPlayer].requests++;
+        if (isOk) {
+            undoRequests[previousPlayer].used++;
+            undo();
+        } else {
+            alert(`${currentPlayer === "Black" ? "Player White" : "Player Black"}, 취소를 거절하셨습니다.`);
+        }
+        drawBoard();
+    }
+
+    function undo() {
+        if (moveHistory.length === 0) return;
+        const lastMove = moveHistory.pop();
+        board[lastMove.i][lastMove.j] = "";
+        let temp = currentPlayer;
+        currentPlayer = previousPlayer;
+        previousPlayer = temp;
+        drawBoard();
+    }
+
+    // 판 그리기
+    function drawBoard() {
+
+        document.getElementById("score-x").textContent = scoreX;
+        document.getElementById("score-o").textContent = scoreO;
+
+        document.getElementById("undo-x-requests").textContent = undoRequests.Black.requests;
+        document.getElementById("undo-o-requests").textContent = undoRequests.White.requests;
+
+        document.getElementById("undo-x-used").textContent = undoRequests.Black.used;
+        document.getElementById("undo-o-used").textContent = undoRequests.White.used;
+
+        const boardElement = document.getElementById("board");
+        boardElement.innerHTML = '';
+        for (let i = 0; i < BOARD_SIZE; i++) {
+            const rowElement = document.createElement("div");
+            rowElement.className = "row";
+            for (let j = 0; j < BOARD_SIZE; j++) {
+                const cellElement = document.createElement("div");
+                if (board[i][j] !== "") cellElement.className = "stone";
+                const stoneElement = document.createElement("div");
+                stoneElement.style.background = board[i][j] === 'Black' ? '#000000' : (board[i][j] === 'White' ? '#FFFFFF' : 'none');
+                cellElement.appendChild(stoneElement);
+                cellElement.addEventListener("click", () => makeMove(i, j));
+                rowElement.appendChild(cellElement);
+            }
+            boardElement.appendChild(rowElement);
+        }
+        const scoreElement = document.getElementById("score");
+        scoreElement.textContent = `Player Black: ${scoreX}, Player White: ${scoreO}`;
+
+        const undoElement = document.getElementById("undo");
+        undoElement.textContent = `Player Black - 요청: ${undoRequests.Black.requests}, 사용: ${undoRequests.Black.used}, Player White - 요청: ${undoRequests.White.requests}, 사용: ${undoRequests.White.used}`;
+    }
+
+    resetBoard();
+</script>
