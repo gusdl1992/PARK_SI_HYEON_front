@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>   
+    <style>
+         body > div{ display: flex; }
+        body > div >div{
+            border:  1px solid blue; padding: 10px; width: 33%;
+        } 
+        table{ width: 100%;}
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div >
+            <h3> 경기도 영화관 목록 </h3>
+            <ul id="영화관목록출력">
+            </ul>
+        </div>
+        <div>
+            <h3> 상영관목록 </h3>
+            <ul id="상영관목록출력">
+
+            </ul>
+        </div>
+        <div>
+            <h3> 글보기 </h3>
+            <div id="boardBox" >
+                <!-- JS innerHTML -->
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src='영화관메모리설계.JS'></script>
+</body>
+</html>
