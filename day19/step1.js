@@ -77,6 +77,7 @@ function printCategory( selectCno ){ // 함수선언. // 매개변수 : (내가 
                         class="${ categoryArray[i].cno == selectCno ? 'selectMenu' : '' }" > 
                         ${ categoryArray[i].cname } 
                     </li>` 
+                    // selectMenu => 클릭한 메뉴를 HTML 클래스이름 정해주고 CSS에서 클릭한 메뉴 색 변경
         }// f end
 
     // 3. 카테고리출력 
@@ -86,6 +87,7 @@ function printCategory( selectCno ){ // 함수선언. // 매개변수 : (내가 
     // 왜?? 제품출력시 모든제품 출력이 아니고. 선택된 카테고리번호의 일치한 제품만 출력해야 되니까.
 
 } // f end 
+
 // - [함수2] : 제품 출력하는 함수. ( 실행조건 : 카테고리출력 되었을떄 )
 function printProduct( selectCno ){ // 함수 선언 // 전체출력X // 내가 선택한 카테고리[부]의 제품[자]만.
     console.log( selectCno );
@@ -97,6 +99,7 @@ function printProduct( selectCno ){ // 함수 선언 // 전체출력X // 내가 
         for( let i = 0 ; i<productArray.length ; i++ ){
             // 만약에 i번째 제품의cno와 내가선택한cno 와 같으면.
             // 천단위쉼표 함수 : 데이터.toLocaleString()
+            // 해당 제품 이미지도 제품 배열에 담아서 출력 ( 이미지 경로 확인 )
             if( productArray[i].cno == selectCno ){
                 html += `<div onclick="setCart( ${ productArray[i].pno } )" class="product">
                             <img src="img/${ productArray[i].pimg}" />
