@@ -28,6 +28,8 @@
                 new Boolean( 불 자료형 )
             3. 문자열 타입 [ 일시적 승급 ]
                 - 속성을 추가는 할수 없지만. JS 만든 사람이 제공하는 속성은 사용이 가능하다.
+                - 자료형.prototype.명 = 값;    ex) Number.prototype.sample = 10;  ex2) Number.prototype.power = function (){}
+
 
 
 */

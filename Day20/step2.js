@@ -40,15 +40,16 @@ console.log(hour);
 // 3. JSON : 다른 애플리케이션과[ JS 아닌 프로그램] 통신할때 데이터 교환 목적 활용
     // 1. JS 객체  ----> JSON문자열 : JSON.stringify()
     // 2. JSON문자열 ----> JS객체 : JSON.parse()
+    // - 함수 X => 함수는 기능이라 안된다.
 
 
 // p. 356. 좀 더 알아보기2
 // localStorage [ JS가 꺼지고/사라져도 사라지지 않는 메모리 ] *개방 보안 취약
-    // - localStorage       : 브라우저[크롬,엣지]에 저장 , 브라우저 자체가 꺼지면 사라짐 , 다른 탭에서 공유
+    // - localStorage       : 브라우저[크롬,엣지]에 저장 , 브라우저 자체가 꺼지면 사라짐(쿠키기반/임시파일) , 다른 탭에서 공유
     // - sessionStorage     : 브라우저[크롬,엣지]에 저장 , 탭 꺼지면 메모리도 사라짐.   , 같은 탭에서 공유
 // localStorage.setItem( 키 , 값 );
 localStorage.setItem( '이름' , '유재석' );  // '이름' 이라는 키로 '유재석' 값을 저장.
-console.log(localStorage.getItem('이름'));
+console.log(localStorage.getItem('이름'));  // '이름' 이라는 키를 넣어서 '유재석'값을 호출
 
         // vs
 
