@@ -5,25 +5,26 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
     <!-- CSS -->
     <link rel='stylesheet' type='text/css' media='screen' href='css/common.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/write.css'>
+    
     <!-- JS -->
-    <!-- 최신 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src='js/common.js'></script>    
-    <script src='js/write.js'></script>
+    <script src='js/common.js'></script>
+    <script src='js/update.js'></script>
+
 </head>
 <body>
     <div id="wrap">
         <div id="header"></div>
         <div id="main">
-            <br/><br/>
-            <input type="password" placeholder="비밀번호입력(수정/삭제시)"/> <br/>
+            <br/>
             <textarea placeholder="게시물내용입력"></textarea>  <br/>
-            <input onchange="이미지등록(event)" type="file" accept="image/*"/>    <br/>
-            <img id="fileImg"/> <br/>
-            <button onclick="피드등록()" type="button">피드등록</button>
+            <input onchange="이미지등록(event)" type="file" accept="image/*" />  <br/>
+            <img id="fileImg" /> <br/>
+            <button onclick="피드수정()" type="button">피드수정</button>
         </div>
     </div>
 </body>
